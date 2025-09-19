@@ -10,6 +10,7 @@
 <body>
     <header>
         <div class="nav">
+            <button id="theme-toggle">🌙</button>
             <h1 class="h11">Nour's Portfolio</h1>
             <ul class="un-nav">
                 <li><a class="li-nav" href="https://xvalley911.github.io/portfolio/index.html">Home</a></li>
@@ -40,8 +41,31 @@
         </div>
         <p align="center">© 2025 Nour's Portfolio</p>
     </footer>
+    <script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "light") {
+    document.body.classList.add("light");
+    toggleBtn.textContent = "🌙";
+  } else {
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    if (document.body.classList.contains("light")) {
+      localStorage.setItem("theme", "light");
+      toggleBtn.textContent = "🌙";
+    } else {
+      localStorage.setItem("theme", "dark");
+      toggleBtn.textContent = "☀️";
+    }
+  });
+</script>
 </body>
 </html>
+
 
 
 
