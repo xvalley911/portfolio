@@ -14,6 +14,7 @@ a{
     background-color: #121212;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .un-nav{
     display: flex;
@@ -146,11 +147,46 @@ body.light a {
     color: #007989;
 }
 
-#theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-left: 10px;
-    color: inherit;
+/* Light/Dark toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When checked (light mode ON) */
+input:checked + .slider {
+  background-color: #00bcd4;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
 }
