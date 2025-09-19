@@ -127,3 +127,30 @@ img {
         gap: 8px;
     }
 }
+
+/* Light mode styles */
+body.light {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.light .nav {
+    background-color: #f2f2f2;
+}
+
+body.light footer {
+    background-color: #f2f2f2;
+}
+
+body.light a {
+    color: #007989;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+    color: inherit;
+}
