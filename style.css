@@ -1,0 +1,161 @@
+*{
+    scroll-behavior: smooth;
+
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.anav{
+    color: #6A11CB;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: large;
+}
+.anav:hover{
+    text-shadow: 0px 0px 15px #8E2DE2;
+}
+.nav{
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px 30px;
+}   
+.nav-ul{
+    display: inline-flex;
+    gap: 1.5rem;
+    list-style: none;
+    
+}
+#about{
+    padding: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 80px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px 50px;
+    box-shadow: 0 0 20px black;
+    transition: 0.3s;
+}
+#about:hover{
+    box-shadow: 0 0 50px #6A11CB;
+    scale: 1.05;
+    cursor: pointer;
+}
+#two{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+#projects{
+    margin-left: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 30px 100px;
+    width: 47%;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 20px black;
+}
+#projects:hover{
+    box-shadow: 0 0 50px #6A11CB;
+    scale: 1.05;
+    cursor: pointer;
+    margin: 2rem;
+}
+#projects a{
+    color: white;
+    text-decoration:line-through;
+    transition: 0.3s;
+}
+#projects a:hover{
+    color: #6A11CB;
+}
+#skills p{
+    display: inline;
+}
+.skill{
+    border-style: solid;
+    border-color: #6A11CB;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.skill:hover{
+    font-size: larger;
+}
+#skills{
+    margin-right: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 100px 30px;
+    width: 47%;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 0 20px black;
+}
+#skills:hover{
+    box-shadow: 0 0 50px #6A11CB;
+    scale: 1.05;
+    cursor: pointer;
+    margin: 2rem;
+}
+footer{
+    margin-top: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#contact a{
+    color: white;
+}
+#contact a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glow-text {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #6A11CB, #fff, #6A11CB);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center; /* gradient moves across */
+  }
+}
