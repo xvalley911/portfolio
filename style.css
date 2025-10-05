@@ -2,8 +2,28 @@
     scroll-behavior: smooth;
 
 }
-body{
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+body {
     margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: linear-gradient(270deg, #10001f, #1a0033, #ff00ff, #10001f);
+    background-size: 800% 800%;
+    animation: neonGlow 10s ease infinite;
+}
+
+@keyframes neonGlow {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
 }
 a{
     text-decoration: none;
@@ -30,7 +50,7 @@ a{
     display: inline-flex;
     gap: 1.5rem;
     list-style: none;
-    
+    padding-top: 5px;
 }
 #about{
     padding: 25px;
@@ -76,11 +96,17 @@ a{
     margin: 2rem;
 }
 #projects a{
-    color: white;
-    text-decoration:line-through;
-    transition: 0.3s;
+    display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid #6A11CB;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 #projects a:hover{
+    text-decoration: none;
     color: #6A11CB;
 }
 #skills p{
@@ -130,21 +156,6 @@ footer{
 #contact a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .glow-text {
   font-weight: bold;
   color: #fff;
@@ -158,4 +169,48 @@ footer{
   to {
     background-position: 200% center; /* gradient moves across */
   }
+}
+@media (max-width: 480px) {
+    .nav{
+        height: 50px;
+        align-items: center;
+    }
+    .nav-li{
+        display: none;
+    }
+    .nav-li.home,
+    .nav-li.contact{
+        display: block;
+    }
+    #about{
+        margin-left: 12.5%;
+        margin-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #two{
+        display: block;
+    }
+    #projects{
+        justify-content: center;
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 50px;
+        border-radius: 30px 30px 30px 30px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    #skills{
+        justify-content: center;
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 50px;
+        border-radius: 30px 30px 30px 30px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .skill{
+        padding: 5px;
+        border-style: none;
+    }
 }
