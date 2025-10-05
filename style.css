@@ -17,7 +17,6 @@ body {
     background-size: 800% 800%;
     animation: neonGlow 10s ease infinite;
 }
-
 @keyframes neonGlow {
     0% { background-position: 0% 50%; }
     25% { background-position: 50% 50%; }
@@ -156,6 +155,9 @@ footer{
 #contact a:hover{
     text-decoration: underline;
 }
+.back{
+    display: none;
+}
 .glow-text {
   font-weight: bold;
   color: #fff;
@@ -213,4 +215,28 @@ footer{
         padding: 5px;
         border-style: none;
     }
+    .lekher{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .back{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight:bolder;
+        font-size: 2rem;
+        border-color: #6A11CB;
+        background-color: #6A11CB;
+        border-style: dotted;        
+        border-radius: 20px;
+        padding: 0 20px 0 20px;
+        margin-right: 10px;
+        transition: 0.3s;
+    }
+    .back:hover{
+        background-color: #8E2DE2;
+    }
 }
+
